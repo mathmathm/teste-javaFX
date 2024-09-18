@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cadastrousuario.UserController">
+    <children>
+        <HBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <children>
+                <Label text="Name:"/>
+                <TextField fx:id="nameField"/>
+                <Label text="Email:"/>
+                <TextField fx:id="emailField"/>
+                <Label text="Telefone:"/>
+                <TextField fx:id="telefoneField"/>
+                <Button text="Add" fx:id="addButton"/>
+                <Button fx:id="editButton" text="Editar" />
+            </children>
+        </HBox>
+        <TableView fx:id="userTable">
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Name"/>
+                <TableColumn fx:id="emailColumn" text="Email"/>
+                <TableColumn fx:id="telefoneColumn" text="Telefone"/>
+            </columns>
+        </TableView>
+        <Button text="Delete" fx:id="deleteButton"/>
+    </children>
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+</VBox>
